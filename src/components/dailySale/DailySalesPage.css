@@ -1,0 +1,331 @@
+/* ==================================
+   Daily Sales Dashboard
+================================== */
+
+.daily-sales-page {
+  margin-left: 20px;
+  padding: 35px;
+  min-height: 100vh;
+  background: #f8fafc;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+
+/* ==================================
+   Page Title
+================================== */
+
+.daily-sales-page h1 {
+  text-align: center;
+  color: #1e293b;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+
+/* ==================================
+   Date Filter Section
+================================== */
+
+.date-filter {
+  background: white;
+  padding: 25px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+
+  margin-bottom: 35px;
+}
+
+
+.date-filter button {
+  padding: 12px 25px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(135deg,
+      #2563eb,
+      #1d4ed8);
+
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+.date-filter button:hover {
+  transform: translateY(-3px);
+  background: #1e40af;
+}
+
+
+/* ==================================
+   Summary Cards
+================================== */
+
+.summary-boxes-row {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  gap: 25px;
+
+  margin-bottom: 40px;
+
+}
+
+
+
+.summary-boxes-row>div {
+
+  padding: 25px;
+
+  border-radius: 18px;
+
+  background: white;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+
+  text-align: center;
+
+}
+
+
+
+.summary-boxes-row>div:hover {
+
+  transform: translateY(-8px);
+
+}
+
+
+
+.summary-boxes-row h3 {
+
+  font-size: 17px;
+
+  color: #64748b;
+
+  margin-bottom: 15px;
+
+}
+
+
+
+.summary-boxes-row p {
+
+  font-size: 32px;
+
+  font-weight: 700;
+
+  color: #0f172a;
+
+  margin: 0;
+
+}
+
+
+/* Different card colors */
+
+.sale-summary {
+  border-top: 5px solid #2563eb;
+}
+
+
+.product-summary {
+  border-top: 5px solid #16a34a;
+}
+
+
+.stock-summary {
+  border-top: 5px solid #f59e0b;
+}
+
+
+.category-summary {
+  border-top: 5px solid #9333ea;
+}
+
+
+
+/* ==================================
+   Daily Summary Cards
+================================== */
+
+
+.summary-boxes {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 25px;
+
+}
+
+
+
+.summary-box {
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 18px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s;
+
+}
+
+
+
+.summary-box:hover {
+
+  transform: translateY(-5px);
+
+}
+
+
+
+.summary-box h2 {
+
+  color: #2563eb;
+
+  font-size: 22px;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+.summary-box p {
+
+  font-size: 16px;
+
+  color: #475569;
+
+  margin: 12px 0;
+
+  font-weight: 500;
+
+}
+
+
+/* Empty message */
+
+.summary-boxes>p {
+
+  background: white;
+
+  padding: 30px;
+
+  text-align: center;
+
+  border-radius: 15px;
+
+  color: #64748b;
+
+  font-size: 18px;
+
+}
+
+
+
+/* ==================================
+   MUI Date Picker Styling
+================================== */
+
+
+.MuiTextField-root {
+
+  background: white;
+
+  border-radius: 10px;
+
+}
+
+
+
+/* ==================================
+   Responsive Design
+================================== */
+
+
+@media(max-width:1200px) {
+
+
+  .summary-boxes-row {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+
+  .summary-boxes {
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+  }
+
+}
+
+
+
+@media(max-width:900px) {
+
+
+  .daily-sales-page {
+
+    margin-left: 0;
+
+    padding: 20px;
+
+  }
+
+
+
+  .date-filter {
+
+    flex-direction: column;
+
+  }
+}
+
+
+
+@media(max-width:600px) {
+  .summary-boxes-row,
+  .summary-boxes {
+    grid-template-columns: 1fr;
+  }
+
+
+  .daily-sales-page h1 {
+
+    font-size: 25px;
+
+  }
+
+
+}

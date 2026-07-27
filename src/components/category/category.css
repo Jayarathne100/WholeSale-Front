@@ -1,0 +1,369 @@
+/* ==================================
+   Category Management Page
+================================== */
+
+.category-container {
+  margin-left: 260px;
+  padding: 35px;
+  min-height: 10vh;
+  background: #f8fafc;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+
+/* ==================================
+   Page Title
+================================== */
+
+.category-container h2 {
+  text-align: center;
+  color: #1e293b;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+
+
+
+/* ==================================
+   Category Form
+================================== */
+
+.category-form {
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 16px;
+
+  display: flex;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  max-width: 700px;
+
+  margin: 0 auto 35px;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08);
+
+}
+
+
+
+.category-form input {
+
+  flex: 1;
+
+  padding: 14px 18px;
+
+  border-radius: 10px;
+
+  border: 1px solid #ddd;
+
+  font-size: 15px;
+
+  outline: none;
+
+  transition: 0.3s;
+
+}
+
+
+
+.category-form input:focus {
+
+  border-color: #2563eb;
+
+  box-shadow:
+    0 0 0 3px rgba(37, 99, 235, 0.15);
+
+}
+
+
+
+/* Add / Update Button */
+
+.category-form button {
+
+  padding: 14px 30px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background:
+    linear-gradient(135deg, #2563eb, #1d4ed8);
+
+  color: white;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+
+}
+
+
+
+.category-form button:hover {
+
+  transform: translateY(-3px);
+
+  background:
+    linear-gradient(135deg, #1d4ed8, #1e40af);
+
+}
+
+
+
+/* ==================================
+   Table Section
+================================== */
+
+
+.category-table {
+
+  width: 100%;
+
+  border-collapse: collapse;
+
+  background: white;
+
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.08);
+
+}
+
+
+
+.category-table thead {
+
+  background: #2563eb;
+
+  color: white;
+
+}
+
+
+
+.category-table th {
+
+  padding: 16px;
+
+  text-align: left;
+
+  font-size: 15px;
+
+}
+
+
+
+.category-table td {
+
+  padding: 15px 16px;
+
+  border-bottom: 1px solid #eee;
+
+  color: #475569;
+
+  font-size: 15px;
+
+}
+
+
+
+.category-table tbody tr {
+
+  transition: 0.3s;
+
+}
+
+
+
+.category-table tbody tr:hover {
+
+  background: #f8fafc;
+
+}
+
+
+
+/* ==================================
+   Action Buttons
+================================== */
+
+
+.edit-btn,
+.delete-btn {
+
+  padding: 8px 16px;
+
+  border: none;
+
+  border-radius: 8px;
+
+  color: white;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  margin-right: 8px;
+
+  transition: 0.3s;
+
+}
+
+
+
+/* Edit Button */
+
+.edit-btn {
+
+  background: #16a34a;
+
+}
+
+
+
+.edit-btn:hover {
+
+  background: #15803d;
+
+  transform: scale(1.05);
+
+}
+
+
+
+/* Delete Button */
+
+.delete-btn {
+
+  background: #ef4444;
+
+}
+
+
+
+.delete-btn:hover {
+
+  background: #b91c1c;
+
+  transform: scale(1.05);
+
+}
+
+
+
+/* ==================================
+   No Data Message
+================================== */
+
+
+.no-data {
+
+  text-align: center;
+
+  padding: 30px;
+
+  color: #64748b;
+
+  font-size: 17px;
+
+}
+
+
+
+/* ==================================
+   Responsive Design
+================================== */
+
+
+@media(max-width:900px) {
+
+
+  .category-container {
+
+    margin-left: 0;
+
+    padding: 20px;
+
+  }
+
+
+
+  .category-form {
+
+    flex-direction: column;
+
+  }
+
+
+
+  .category-form button {
+
+    width: 100%;
+
+  }
+
+
+
+  .category-table {
+
+    display: block;
+
+    overflow-x: auto;
+
+  }
+
+
+
+}
+
+
+
+@media(max-width:600px) {
+
+
+  .category-container h2 {
+
+    font-size: 25px;
+
+  }
+
+
+
+  .category-table th,
+  .category-table td {
+
+    font-size: 13px;
+
+    padding: 12px;
+
+  }
+
+
+
+  .edit-btn,
+  .delete-btn {
+
+    padding: 7px 12px;
+
+    font-size: 12px;
+
+  }
+
+
+}

@@ -1,0 +1,184 @@
+
+.product-page {
+  width: 70%;
+  /* max-width: 1200px; */
+  margin: 30px auto;
+  padding: 25px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-page h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #1f2937;
+  font-size: 32px;
+}
+
+
+/* ===========================
+   FORM
+=========================== */
+
+.product-form {
+  display: grid;
+  width: 70%;
+  grid-template-columns: 2fr 2fr 1fr auto auto;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.product-form select,
+.product-form input {
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.product-form select:focus,
+.product-form input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.25);
+}
+
+
+/* ===========================
+   BUTTONS
+=========================== */
+
+.product-form button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #fff;
+  font-size: 15px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.product-form button[type="submit"] {
+  background: #2563eb;
+}
+
+.product-form button[type="submit"]:hover {
+  background: #1d4ed8;
+}
+
+.product-form button[type="button"] {
+  background: #6b7280;
+}
+
+.product-form button[type="button"]:hover {
+  background: #4b5563;
+}
+
+
+/* ===========================
+   TABLE
+=========================== */
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.product-table thead {
+  background: #2563eb;
+  color: white;
+}
+
+.product-table th,
+.product-table td {
+  padding: 14px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.product-table tbody tr:nth-child(even) {
+  background: #f8fafc;
+}
+
+.product-table tbody tr:hover {
+  background: #eef4ff;
+}
+
+
+/* ===========================
+   TABLE BUTTONS
+=========================== */
+
+.product-table button {
+  border: none;
+  padding: 8px 15px;
+  margin: 0 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.product-table button:first-child {
+  background: #f59e0b;
+}
+
+.product-table button:first-child:hover {
+  background: #d97706;
+}
+
+.product-table button:last-child {
+  background: #dc2626;
+}
+
+.product-table button:last-child:hover {
+  background: #b91c1c;
+}
+
+
+/* ===========================
+   EMPTY TABLE
+=========================== */
+
+.product-table td[colspan] {
+  padding: 30px;
+  color: #6b7280;
+  font-style: italic;
+}
+
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 900px) {
+
+  .product-form {
+    grid-template-columns: 1fr;
+  }
+
+  .product-form button {
+    width: 100%;
+  }
+
+  .product-page {
+    padding: 20px;
+  }
+
+  .product-page h1 {
+    font-size: 26px;
+  }
+
+  .product-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
